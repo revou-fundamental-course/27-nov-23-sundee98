@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RumusKita</title>
+   <link rel="stylesheet" href="css/styles.css">
+   <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    <header> 
+        <div class="navigation-bar"> 
+        <H2  id="logo">RumusKita.com</H2>
+        <input class="search-box" type="text" placeholder="cari rumus">
+            <button type="submite">Search</button>
+       <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <label class="language-selector" for="language"></label>
+        <select id="language" onchange="changeLanguage()">
+          <option value="id">Bahasa Indonesia</option>
+          <option value="en">English</option>
+          <option value="kr">Korea</option>
+          <option value="jp">Japan</option>
+          <option value="jw">Jawa</option>
+        </select>
+       </nav>
+        </div>
+ </header>
+ <nav class="float-left">
+    <p> Bangun Datar</p>
+    <ul class="glosarium">
+        <li>Segitiga</li>
+        <br>
+        <li>Persegi</li>
+        <br>
+        <li>Lingkaran</li>
+        <br>
+        <li>Balok</li>
+        <br>
+        <li>Trapesium</li>
+        <br>
+        <li>Jajargenjang</li>
+    </ul>
+</nav>
+ <section>
+    <h2 style="clear:right">LUAS SEGITIGA</h2>
+    <p>Hitung Luas Dengan Kalkulator matematika :</p>
+    <div class="clearfix">    
+        <img class="img" src="css/luas-segitiga.jpg" alt="segitiga" width="420" height="360">
+        <label for="alas"></label>
+        <input class="formhitung" type="text" name="number" id="alas" placeholder="Nilai Alas (Cm)">
+        <br>
+        <label for="tinggi"></label>
+        <input class="formhitung" type="text" name="number" id="tinggi" placeholder="Nilai Tinggi (Cm)"> 
+        <button class="button" onclick="hitungLuasDanKeliling()" id="calculate">Hitung</button>
+        <br>
+        <p id="hasilLuas"></p>
+    </div>
+    <h2 style="clear:right">KELILING SEGITIGA</h2>
+    <p>Hitung Keliling Dengan Kalkulator matematika</p>
+    <div class="clearfix2">    
+        <img class="img" src="css/keliling-segitiga.jpg" alt="segitiga" width="420" height="360">
+        <label for="sisiA"></label>
+        <input class="formhitung" type="text" name="number" id="sisiA" placeholder="Sisi A (Cm)">
+        <br>
+        <label for="sisiB"></label>
+        <input class="formhitung" type="text" name="number" id="sisiB" placeholder="Sisi B (Cm)"> 
+        <br>
+        <label for="sisiC"></label>
+        <input class="formhitung" type="text" name="number" id="sisiC" placeholder="Sisi c (Cm)"> 
+        <button class="button" onclick="hitungLuasDanKeliling()" id="calculate">Hitung</button>
+        <br>
+        <p id="hasilKeliling"></p>
+    </div>
+ </section>
+ <aside>
+    <h3></h3>
+ </aside>
+  
+</body>
+</html>
